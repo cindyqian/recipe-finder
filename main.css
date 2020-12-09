@@ -5,16 +5,9 @@ html{
 
 body {
     background-image: linear-gradient(to right, #9378bb , #e19692);
-    /* , #fdc094); */
-    /* #F1EBEB */
 }
 
-/* div{
-    align-self: center;
-} */
-
 h1 {
-    /* padding-top: 50px; */
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 40px;
     font-weight: 400;
@@ -30,11 +23,9 @@ h1 {
 }
 
 p {
-    /* padding-top: 10px; */
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     font-weight: 350;
-    /* font-style: italic; */
     color: #ffffff;
     text-align: center;
     letter-spacing: .10em; 
@@ -50,7 +41,6 @@ p {
 
 .typewriter h1 {
   overflow: hidden;
-  /* border-right: .10em solid #e19692;  */
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: .10em; 
@@ -65,15 +55,8 @@ p {
   to { width: 100% }
 }
 
-/* The typewriter cursor effect (cursor blinks) */
-/* @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #ddb6b3; }
-} */
-
 .search {
     position: absolute;
-    /* position: relative; */
     top: 30%;
     width: 80%;
     right: 10%;
@@ -130,16 +113,7 @@ button:focus {
 }
 
 
-.recipeTitles{
-    /* outline: 2px dashed #f69c55; */
-    /* outline: 3px dashed; */
-    /* // #e19692; */
-    /* outline-offset: -3px; */
-}
-
-
 #recipe1{
-    /* width: 80%; */
     height: 100%;
     background-color: #ffffff;
     opacity: 0.8;
@@ -150,9 +124,6 @@ button:focus {
     height: 100%;
     background-color: #ffffff;
     opacity: 0.8;
-    /* width: 30%;
-    height: 100%; */
-    /* right: 70%; */
     /* background-image: url("tempImage.png"); */
 }
 
@@ -160,8 +131,6 @@ button:focus {
     height: 100%;
     background-color: #ffffff;
     opacity: 0.8;
-    /* width: 30%;
-    height: 100%; */
     /* background-image: url("tempImage.png"); */
 }
 
@@ -176,26 +145,11 @@ button:focus {
     
 }
 
-/* #results{
-    position: absolute;
-    bottom: 10%;
-    width: 80%;
-    right: 10%;
-}
-
-
-
-
- */
-
-
 
 .bottom{
     position: absolute;
-    /* bottom: -100%; */
     bottom: 10%;
     /*^doesnt work if more than 3 results*/
     width: 80%;
     right: 10%;
 }
-
