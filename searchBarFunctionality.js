@@ -1,4 +1,5 @@
-var recipes = "Fried Rice, Eggs, Salt, Rice, Ginger, Onions\n" +
+var recipes = 
+"Fried Rice, Eggs, Salt, Rice, Ginger, Onions\n" +
 "Sinangag, Eggs, Salt, Rice, Ginger, Onions\n" +
 "Tomato Soup, Onions, Tomatoes, Salt\n" +
 "Stir Fry Tomato and Onions, Onions, Tomatoes, Salt\n" +
@@ -84,7 +85,7 @@ function startSearch(userInput){
       h1.style.fontWeight = "370";
       h1.style.opacity = "0.5";
       h1.id = "n/a";
-      h1.innerHTML = "Sorry, our database could not find any recipes for you :(";
+      h1.innerHTML = "Sorry, we could not find any recipes for you in our database :(";
       foundRecipesWindow.document.getElementById("recipesGrid").appendChild(h1);
     }
     for(var n = 0; n < resultsAsArray.length; n++){
