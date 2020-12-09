@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<script src="searchBarFunctionality.js"></script>
+<html>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <head>
+        <title>Recipe Finder</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+  </head>
+    <body>
+        <div class="typewriter welcome">
+            <h1>Welcome to Recipe Finder</h1>
+            
+        </div>
 
+        <div class="slogan">
+            <p>Build Your Dinner With Us!</p>
+        </div>
+
+        <div class="search">
+
+            <form method="GET" action="/foundRecipes.html">
+            <!-- do i sill need GET? -->
+            <!-- <form method="GET" action="/foundRecipes.php"> -->
+                <!-- <a class="active" href="#home">Home</a> -->
+                <!-- <a href="#about">About</a> -->
+                <!-- <a href="#contact">Contact</a> -->
+                <input id="searchInput" type="text" placeholder="Eg. rice, green bell pepper, tofu..." name="givenIngredients">
+                <!-- name="givenIngredients" -->
+                <!-- type="text" id="myText" name="fname" value="Mickey" -->
+                <!-- how to change color of placeholder text???? not working??? -->
+                <!-- <input type="submit"> -->
+                <!-- <button id="submitButton" type="button" style="display: none" onclick="buttonCode()"></button> -->
+                <!-- <a id="redirect" onclick="startSearch()"></a> -->
+                <!-- href="#results" -->
+                
+                
+                <!-- not sure why style wont be implemented by css??? so had to add here? -->
+                <!-- onclick="detect()"></button> -->
+
+                <script> 
+                
+                    var input = document.getElementById("searchInput");
+                    input.addEventListener("keyup", function(event) {
+                        if (event.keyCode === 13) {
+                            event.preventDefault();
+                            var userInput = document.getElementById("searchInput").value;
+                            // document.getElementById("redirect").click();
+                            startSearch(userInput);
+                            // document.getElementById("redirect").click();
+                        }
+                    });
+
+
+                </script>
+
+            </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <div class="blurb">
+            <p>Use Recipe Finder to find easy meals that can be made from the foods you have at hand! <br> Just type in a list of ingredients to begin! <br> Please separate with spaces :)</p>
+        </div>
+
+
+        <!-- <div id="results">
+            <p>uyersjgdhfbiukjwebrsdifkj</p>
+        </div> -->
+
+
+
+
+
+
+
+
+
+        <div class="bottom">
+            <p>Created By<br>Cindy Qian ,   Drishya Nair ,   Jasmine Kuo<br>CSE 143 Autumn 2020</p>
+        </div>
+
+    </body>
+</html>
