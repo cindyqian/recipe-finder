@@ -23,7 +23,7 @@ public class RecipeFinder {
             Scanner fileReader = new Scanner(file);
             while (fileReader.hasNextLine()) {
                 String data = fileReader.nextLine();
-                String[] acr = data.split(",");
+                String[] acr = data.split(", ");
                 if (!invertMap.containsKey(acr[0])) { // if invertMap does not contain the key
                     invertMap.put(acr[0], new HashSet<>()); // we add it in
                     for (int i = 1; i < acr.length; i++) { // we also add all the other ingredients in
@@ -60,7 +60,7 @@ public class RecipeFinder {
     // post: Split the user input and put it in a set
     public Set<String> splitQuery(String query) { // milk, sugar, flour, eggs, pumpkin
         Set<String> result = new HashSet<>();
-        String [] ingredients = query.split(","); // ["milk", "sugar", "flour", "eggs", "pumpkin"]
+        String [] ingredients = query.split(", "); // ["milk", "sugar", "flour", "eggs", "pumpkin"]
         for (int i = 0; i <= ingredients.length - 1; i++) {
             result.add(ingredients[i].replaceAll("\\s+", "").toLowerCase()); // remove whitespaces from string and lowercase before adding to result
         }
